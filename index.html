@@ -2,13 +2,70 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 - Dynamic Web Fundamentals - Ovinson Lugo</title>
+  <meta name="description"
+    content="WDD 131 - Dynamic Web Fundamentals - Ovinson Lugo - This page gives you some details about my life, what I like, where I'm from, and where I live">
+  <meta name="author" content="Ovinson Lugo">
+  <link rel="stylesheet" href="styles/base.css">
 </head>
 
-<body>
-    <h1>What is up people</h1>
+<body class="container">
+  <header class="header">
+    <h1 class="header__title">WDD 131: Dynamic Web Fundamentals - <span class="header__title-span">Ovinson Lugo</span>
+    </h1>
+    <nav class="nav">
+      <a href="www.linkedin.com/in/ovinsonlugo">LinkedIn</a>
+      <a href="https://byui.instructure.com">I-Learn</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+      <a href="#">Final Project</a>
+    </nav>
+  </header>
+  <main class="main">
+    <h2 class="main__title">About Me</h2>
+    <section class="main__container">
+      <p class="main__intro">My name is Ovinson and I go by Ovi. I'm from The Dominican Republic and no, I don't like
+        baseball
+        as much as I
+        should. I enjoy eating things from my country and also trying new things. I also like videogames. I married my
+        wife Cassidy 3 years ago and I have 2 girls, Amilah and Sailor.</p>
+      <img class="main__img" src="images/ovi-at-the-Conf.jpg" alt="Ovi at the Conference Center, Utah" width="200"
+        height="200">
+    </section>
+    <section class="main__container2">
+      <h3 class="main__container2_title">
+        Dominican Republic
+      </h3>
+    </section>
+  </main>
+  <div class="aside">
+    <h2 class="aside__title">Web Dev Resources</h2>
+    <ul class="links">
+      <li>
+        <a href="https://css-tricks.com/">CSS Tricks</a>
+      </li>
+      <li>
+        <a href="https://developer.mozilla.org/en-US/">MDN</a>
+      </li>
+      <li>
+        <a href="https://stackoverflow.com/">Stack Overflow</a>
+      </li>
+      <li>
+        <a href="https://www.freecodecamp.org/">freeCodeCamp</a>
+      </li>
+      <li>
+        <a href="https://v2.scrimba.com/home">Scrimba</a>
+      </li>
+      <li>
+        <a href="https://javascript.info/">JavaScript.info</a>
+      </li>
+    </ul>
+  </div>
+  <footer class="footer">
+    <p>©<span id="currentyear"></span> 🌴 Ovinson Lugo 🌴 Dominican Republic</p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
 
 </html>
