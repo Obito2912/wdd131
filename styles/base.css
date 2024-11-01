@@ -1,7 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: "Merriweather", serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Yanone Kaffeesatz", serif;
 }
 
 .container {
@@ -11,6 +24,7 @@
     grid-template-columns: 2fr 1fr;
     gap: 10px;
 }
+
 
 .header {
     position: relative;
@@ -42,34 +56,46 @@
     color: #fff;
     font-size: 25px;
     padding: 10px;
-    width: 100%;
+}
+
+.nav a:hover {
+    color: #fffb00;
 }
 
 .main {
+    width: 90%;
     grid-column: 1/2;
     font-size: 20px;
     background-color: #939393;
     padding: 10px;
+    display: grid;
+    justify-self: center;
 }
 
-.main__title {
-    text-align: center;
+.card p {
+    font-size: 16px;
 }
 
-.main__container {
-    display: flex;
-}
-
-.main__img {
+.card__img1 {
     float: right;
+    margin-left: 10px;
+    width: 150px;
+    height: auto;
 }
 
-.main__container2 {
+.card__title {
     text-align: center;
+    margin: 10px auto;
+    width: 80%;
+    border-bottom: 2px solid #808080;
+    font-size: 30px;
 }
 
-.main__container2_title {
-    margin-top: 10px;
+.card__img2 {
+    width: 200px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
 }
 
 .aside {
@@ -78,6 +104,9 @@
     padding: 10px;
     display: grid;
     grid-template-rows: 100px 3fr;
+    width: 90%;
+    justify-self: center;
+    box-shadow: inset 2px 2px 5px #000;
 }
 
 .aside__title {
@@ -87,6 +116,9 @@
 
 .links {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .links li {
@@ -94,12 +126,15 @@
 }
 
 .links a {
-    display: block;
     color: #000;
 }
 
 .links a:hover {
     color: #039494;
+}
+
+.links:visited, .links:focus {
+    color: #5f0394;
 }
 
 .footer {

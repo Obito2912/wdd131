@@ -9,6 +9,7 @@
     content="WDD 131 - Dynamic Web Fundamentals - Ovinson Lugo - This page gives you some details about my life, what I like, where I'm from, and where I live">
   <meta name="author" content="Ovinson Lugo">
   <link rel="stylesheet" href="styles/base.css">
+  <script defer src="scripts/getdates.js"></script>
 </head>
 
 <body class="container">
@@ -23,48 +24,60 @@
     </nav>
   </header>
   <main class="main">
-    <h2 class="main__title">About Me</h2>
-    <section class="main__container">
-      <p class="main__intro">My name is Ovinson and I go by Ovi. I'm from The Dominican Republic and no, I don't like
-        baseball
-        as much as I
-        should. I enjoy eating things from my country and also trying new things. I also like videogames. I married my
-        wife Cassidy 3 years ago and I have 2 girls, Amilah and Sailor.</p>
-      <img class="main__img" src="images/ovi-at-the-Conf.jpg" alt="Ovi at the Conference Center, Utah" width="200"
+    <section class="card">
+      <h2 class="card__title">About Me</h2>
+      <img class="card__img1" src="images/profile-pic.jpg" alt="Ovi at the Conference Center, Utah" width="200"
         height="200">
+      <p>My name is Ovinson and I go by Ovi. I'm from The Dominican Republic and no, I don't like
+        baseball as much as I should. I enjoy eating things from my country and also trying new things. I also like
+        videogames. Some day in the future I would like to travel the world with my family and meet a lot of new places.
+      </p><br>
+      <p>
+        I married my wife Cassidy 3 years ago. I enjoy spending time with her even though I'm not a people person. I
+        have 2 girls, Amilah and Sailor. I'm working really hard to learn how to program. I'm doing school and at the
+        same time I'm doing a bootcamp so I can be able to provide for them. That's my goal!
+      </p>
     </section>
-    <section class="main__container2">
-      <h3 class="main__container2_title">
+    <section class="card">
+      <h3 class="card__title">
         Dominican Republic
       </h3>
+      <img class="card__img2" src="images/dr-flag.jpg" alt="Dominican Republic Flag" width="200" height="200">
+      <p>
+        The Dominican Republic is a stunning Caribbean paradise known for its breathtaking beaches, lush mountains, and
+        vibrant culture. Its white-sand beaches, such as Punta Cana and Playa Rincón, are world-famous, offering
+        crystal-clear turquoise waters perfect for swimming. The warm and welcoming hospitality of the Dominican people
+        adds to the island’s charm. You’ll find a mix of incredible local dishes, like mangu, sancocho, and tostones,
+        that reflect a blend of African, Spanish, and Taino influences.
+      </p>
     </section>
   </main>
   <div class="aside">
     <h2 class="aside__title">Web Dev Resources</h2>
     <ul class="links">
       <li>
-        <a href="https://css-tricks.com/">CSS Tricks</a>
+        <a href="https://css-tricks.com/" target="_blank">CSS Tricks</a>
       </li>
       <li>
-        <a href="https://developer.mozilla.org/en-US/">MDN</a>
+        <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a>
       </li>
       <li>
-        <a href="https://stackoverflow.com/">Stack Overflow</a>
+        <a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a>
       </li>
       <li>
-        <a href="https://www.freecodecamp.org/">freeCodeCamp</a>
+        <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a>
       </li>
       <li>
-        <a href="https://v2.scrimba.com/home">Scrimba</a>
+        <a href="https://v2.scrimba.com/home" target="_blank">Scrimba</a>
       </li>
       <li>
-        <a href="https://javascript.info/">JavaScript.info</a>
+        <a href="https://javascript.info/" target="_blank">JavaScript.info</a>
       </li>
     </ul>
   </div>
   <footer class="footer">
-    <p>©<span id="currentyear"></span> 🌴 Ovinson Lugo 🌴 Dominican Republic</p>
-    <p id="lastModified"></p>
+    <p><span id="currentyear">©</span> 🌴 Ovinson Lugo 🌴 Dominican Republic</p>
+    <p id="lastModified">Last Modified: </p>
   </footer>
 </body>
 
