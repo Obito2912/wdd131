@@ -63,13 +63,12 @@ h4 {
 }
 
 .main {
-    width: 90%;
+    max-width: 100%;
     grid-column: 1/2;
     font-size: 20px;
     background-color: #939393;
     padding: 10px;
     display: grid;
-    justify-self: center;
 }
 
 .card p {
