@@ -64,12 +64,12 @@ h4 {
 }
 
 .main {
-    max-width: 100%;
+    max-width: 90%;
     grid-column: 1/2;
-    font-size: 20px;
     background-color: #939393;
     padding: 10px;
     display: grid;
+    justify-self: center;
 }
 
 .card p {
@@ -100,7 +100,7 @@ h4 {
 
 .aside {
     grid-column: 2/3;
-    font-size: 20px;
+    font-size: 18px;
     padding: 10px;
     display: grid;
     grid-template-rows: 100px 3fr;
@@ -111,6 +111,7 @@ h4 {
 
 .aside__title {
     text-align: center;
+    font-size: 30px;
 }
 
 .links {
