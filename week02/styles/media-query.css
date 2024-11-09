@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #426559;
+    padding: 10px;
+    background-color: #7bc3d3;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+section {
+    padding: 1rem;
+    background-color: #fff;
+}
