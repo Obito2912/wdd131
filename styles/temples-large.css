@@ -51,5 +51,6 @@
 
     .footer {
         padding: 10px 0;
+        color: var(--nav-link-color);
     }
 }
