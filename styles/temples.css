@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;1,700&family=Poppins&display=swap');
 
 :root {
-    --primary-color: ;
+    --background-color: rgba(0, 0, 0, 0.321);
     --secondary-color: ;
     --accent1-color: ;
     --accent2-color: ;
@@ -29,7 +29,7 @@ h3 {
 
 body {
     margin: 10px 10px 0;
-    background-image: url(/images/gradient-small.jpg);
+    background-image: url(../images/gradient-small.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -115,4 +115,5 @@ body {
 
 .footer {
     text-align: center;
+    background-color: var(--background-color);
 }
