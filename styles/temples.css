@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;1,700&family=Poppins&display=swap');
+
+:root {
+    --primary-color: ;
+    --secondary-color: ;
+    --accent1-color: ;
+    --accent2-color: ;
+
+    --heading-font: "Montserrat";
+    --paragraph-font: "Poppins";
+
+    --nav-background-color: hsl(0, 0%, 0%, 0.8);
+    --nav-link-color: ;
+    --nav-hover-link-color: ;
+    --nav-hover-background-color: rgba(160, 30, 97, 0.801);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+}
+
+body {
+    margin: 10px 10px 0;
+    background-image: url(/images/gradient-small.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: var(--paragraph-font);
+    height: 100vh;
+}
+
+.header {
+    text-align: center;
+    position: relative;
+}
+
+.header__menu {
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    font-size: 30px;
+    color: #fff;
+    background-color: var(--nav-background-color);
+    border-radius: 5px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__menu::before {
+    content: "≡";
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.header__menu:hover {
+    background-color: var(--nav-hover-background-color);
+}
+
+.header__nav {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 30%;
+    background-color: hsl(0, 0%, 0%, 0.8);
+    border-radius: 2px;
+}
+
+.js-show-header-nav {
+    visibility: visible;
+}
+
+.header__menu.show::before {
+    content: "❌";
+    display: inline-block;
+    font-size: 20px;
+}
+
+.header__list {
+    list-style-type: none;
+}
+
+.header__links {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    font-family: var(--heading-font);
+}
+
+.header__links:hover {
+    background-color: var(--nav-hover-background-color);
+}
+
+.main {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+}

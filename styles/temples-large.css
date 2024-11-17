@@ -1,0 +1,51 @@
+@media screen and (min-width: 350px) {
+
+    body {
+        margin: 0 10px;
+    }
+
+    .header__menu.js-hide-content::before {
+        content: none;
+    }
+
+    .header__nav {
+        position: static;
+        width: 100%;
+    }
+
+    .header__list {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin-inline: auto;
+    }
+
+    .header__list li {
+        flex: 1 1 100%;
+    }
+
+    .header__links {
+        font-size: 20px;
+    }
+
+    .header__links:hover {
+        text-decoration: underline;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: center;
+        margin-inline: auto;
+        row-gap: 10px;
+        width: 75%;
+    }
+
+    .main h2 {
+        grid-column: 1 / 4;
+    }
+
+    .main figure {
+        width: 300px;
+    }
+}
