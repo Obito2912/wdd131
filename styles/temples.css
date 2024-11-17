@@ -119,6 +119,6 @@ body {
 }
 
 #lastModified {
-    color: var(--nav-hover-link-color);
+    color: var(--nav-link-color);
     font-weight: 600;
 }
