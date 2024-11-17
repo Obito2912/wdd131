@@ -51,11 +51,5 @@
 
     .footer {
         padding: 10px 0;
-        background-color: var(--background-color);
-    }
-
-    #lastModified {
-        color: var(--nav-hover-link-color);
-        font-weight: 600;
     }
 }
