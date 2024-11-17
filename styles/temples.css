@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;1,700&family=Poppins&display=swap');
 
 :root {
-    --background-color: rgba(0, 0, 0, 0.6);
+    --background-color: rgba(0, 0, 0, 0.8);
     --secondary-color: ;
     --accent1-color: ;
     --accent2-color: ;
@@ -116,6 +116,7 @@ body {
 .footer {
     text-align: center;
     background-color: var(--background-color);
+    color: var(--nav-link-color);
 }
 
 #lastModified {
