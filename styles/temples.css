@@ -10,9 +10,9 @@
     --paragraph-font: "Poppins";
 
     --nav-background-color: hsl(0, 0%, 0%, 0.8);
-    --nav-link-color: ;
-    --nav-hover-link-color: ;
-    --nav-hover-background-color: rgba(160, 30, 97, 0.801);
+    --nav-link-color: #fff;
+    --nav-hover-link-color: #32ce73;
+    --nav-hover-background-color: rgba(30, 158, 160, 0.282);
 }
 
 * {
@@ -50,7 +50,7 @@ body {
     transform: translateY(-50%);
     right: 0;
     font-size: 30px;
-    color: #fff;
+    color: var(--nav-link-color);
     background-color: var(--nav-background-color);
     border-radius: 5px;
     width: 30px;
@@ -98,13 +98,14 @@ body {
 
 .header__links {
     text-decoration: none;
-    color: #fff;
+    color: var(--nav-link-color);
     display: block;
     padding: 10px;
     font-family: var(--heading-font);
 }
 
 .header__links:hover {
+    color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
 
