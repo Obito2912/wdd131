@@ -104,7 +104,7 @@ body {
     font-family: var(--heading-font);
 }
 
-.header__links:hover {
+.header__list li a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
