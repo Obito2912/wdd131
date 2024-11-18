@@ -33,19 +33,18 @@ h3 {
 }
 
 body {
-    margin: 10px 10px 0;
     background-image: url(../images/gradient-small.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     font-family: var(--paragraph-font);
-    height: 100vh;
 }
 
 .header {
     text-align: center;
     position: relative;
+    margin: 0 10px;
 }
 
 .header__menu {

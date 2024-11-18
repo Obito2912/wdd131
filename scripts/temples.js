@@ -4,7 +4,7 @@ const headerMenu = document.querySelector('.header__menu');
 const navEl = document.querySelector('.header__nav');
 
 const today = new Date();
-const templesLarge = window.matchMedia('(min-width: 350px)');
+const templesLarge = window.matchMedia('(min-width: 425px)');
 
 currentYear.textContent += today.getFullYear();
 lastModified.textContent += document.lastModified;
