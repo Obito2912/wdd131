@@ -65,9 +65,15 @@
 }
 
 @media screen and (min-width: 850px) {
-    .main {
+
+    html {
+        height: 100%;
+    }
+
+    body {
+        min-height: 100%;
         display: grid;
-        grid: repeat(6, auto, 1fr) / auto;
+        grid: 5rem 1fr 4rem / auto;
     }
 
     .main h2 {
