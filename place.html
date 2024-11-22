@@ -9,6 +9,7 @@
         content="This website provides information like temperature, nature, and more about this country">
     <meta name="author" content="Ovinson Lugo">
     <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script defer src="scripts/place.js"></script>
@@ -19,14 +20,11 @@
         <h1>Italy</h1>
     </header>
     <main>
-        <div>
+        <div class="hero__container">
             <picture>
-                <source media="" srcset="">
-                <source media="" srcset="">
-                <img src="images/street-in-italy.webp" alt="street in italy" width="440" height="460">
+                <source media="(min-width: 500px)" srcset="images/rome-italy.webp">
+                <img src="images/street-in-italy.webp" alt="street in italy" width="640" height="960">
             </picture>
-        </div>
-        <div class="container">
             <section class="data__section">
                 <h2>Data</h2>
                 <div class="data__left">
@@ -56,6 +54,10 @@
             </section>
             <section class="weather__section">
                 <h2>Weather</h2>
+                <picture class="weather__icon">
+                    <source media="(min-width: 500px)" srcset="images/weather-icon2.svg">
+                    <img src="images/cloud-rain-sun-icon.svg" alt="Cloudy icon wiht rain" width="20" height="20">
+                </picture>
                 <div class="weather__left">
                     <ul>
                         <li>Temperature: </li>

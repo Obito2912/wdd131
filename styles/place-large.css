@@ -1,0 +1,32 @@
+@media screen and (min-width: 500px) {
+
+    body {
+        grid-template-rows: 50px 1fr 60px;
+    }
+
+    .hero__container {
+        position: relative;
+    }
+
+    .data__section {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    .weather__section {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .weather__icon {
+        width: 45px;
+    }
+
+    .data__section,
+    .weather__section {
+        background-color: #ffffffb5;
+        border-radius: 10px;
+    }
+}
