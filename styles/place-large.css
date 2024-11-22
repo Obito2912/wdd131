@@ -8,6 +8,11 @@
         position: relative;
     }
 
+    .hero__image {
+        width: 100%;
+        height: 100%;
+    }
+
     .data__section {
         position: absolute;
         top: 10px;
@@ -22,6 +27,15 @@
 
     .weather__icon {
         width: 45px;
+        display: none;
+    }
+
+    .weather__title::after {
+        content: url(/images/sand-storm-icon.svg);
+        font-size: 20px;
+        width: 40px;
+        display: block;
+        margin-inline: auto;
     }
 
     .data__section,

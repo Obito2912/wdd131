@@ -18,9 +18,10 @@
 
 img,
 picture {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
     display: block;
+    object-fit: cover;
 }
 
 html {
@@ -28,7 +29,7 @@ html {
 }
 
 body {
-    min-height: 100%;
+    height: 100%;
     display: grid;
     grid-template-rows: 50px 1fr 75px;
 }
@@ -37,10 +38,6 @@ body {
     text-align: center;
     place-content: center;
     background-color: var(--light-background-color);
-}
-
-.hero__container picture img {
-    width: 100%;
 }
 
 .data__section,
@@ -68,6 +65,7 @@ body {
 .weather__icon {
     grid-column: 1 / 3;
     justify-self: center;
+    width: 30px;
 }
 
 .data__left,
