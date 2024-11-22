@@ -31,7 +31,7 @@
     }
 
     .weather__title::after {
-        content: url(/images/sand-storm-icon.svg);
+        content: url(../images/sand-storm-icon.svg);
         font-size: 20px;
         width: 40px;
         display: block;
