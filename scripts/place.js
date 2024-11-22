@@ -4,13 +4,13 @@ const lastModified = document.querySelector("#lastModified");
 const temperature = document.querySelector("#temperature");
 const wind = document.querySelector("#wind");
 const windChill = document.querySelector("#windChill");
-const windSpeedValue = 17;
-const temperatureValue = 61;
 
 currentYear.textContent += today.getFullYear();
 lastModified.textContent += document.lastModified;
-temperature.textContent = `${temperatureValue} °F`;
-wind.textContent = `${windSpeedValue} mph`;
+
+// Giving values directly until I know how to get data from third party API's
+temperature.textContent = `${(temperatureValue = 61)} °F`;
+wind.textContent = `${(windSpeedValue = 17)} mph`;
 windChill.textContent = calculateWindChill(temperatureValue, windSpeedValue);
 
 function calculateWindChill(temperature, windSpeed) {
