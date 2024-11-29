@@ -97,76 +97,43 @@ lastModified.textContent += document.lastModified;
 lastModified.style.color = "#fff";
 lastModified.style.fontWeight = "normal";
 
+function createTemplateCard() {
+  temples.forEach((temple) => {
+    let card = document.createElement("section");
+    card.classList.add("section");
+    let name = document.createElement("h3");
+    name.classList.add("card__title");
+    let location = document.createElement("p");
+    let dedication = document.createElement("p");
+    let area = document.createElement("p");
+    let img = document.createElement("img");
+
+    name.textContent = temple.templeName;
+    location.innerHTML = `<span class='label'>Location: </span> ${temple.location}`;
+    dedication.innerHTML = `<span class='label'>Dedicated: </span> ${temple.dedicated}`;
+    area.innerHTML = `<span class='label'>Size: </span> ${temple.area} sq ft`;
+    img.setAttribute("src", temple.imageUrl);
+    img.setAttribute("alt", `${temple.templeName} Temple`);
+    img.setAttribute("loading", "lazy");
+    img.setAttribute("width", 600);
+    img.setAttribute("height", 600);
+
+    card.appendChild(name);
+    card.appendChild(location);
+    card.appendChild(dedication);
+    card.appendChild(area);
+    card.appendChild(img);
+
+    document.querySelector(".div__main").appendChild(card);
+  });
+}
+
 function hideHambBtn(event) {
   if (event.matches) {
     headerMenu.classList.add("js-hide-content");
   } else {
     headerMenu.classList.remove("js-hide-content");
   }
-}
-
-function createPicture(templeName, location, dedicated, area, imageUrl) {
-  const figure = document.createElement("figure");
-  figure.classList.add("figure");
-
-  const h2 = document.createElement("h2");
-  h2.textContent = templeName;
-  h2.classList.add("card__title");
-  figure.appendChild(h2);
-
-  const locationP = document.createElement("p");
-  locationP.textContent = location;
-
-  const locationSpan = document.createElement("span");
-  locationSpan.textContent = "Location: ";
-  locationSpan.classList.add("bold__words");
-
-  locationP.prepend(locationSpan);
-  figure.appendChild(locationP);
-
-  const dedicatedP = document.createElement("p");
-  dedicatedP.textContent = dedicated;
-
-  const dedicatedSpan = document.createElement("span");
-  dedicatedSpan.textContent = "Dedicated: ";
-  dedicatedSpan.classList.add("bold__words");
-
-  dedicatedP.prepend(dedicatedSpan);
-  figure.appendChild(dedicatedP);
-
-  const areaP = document.createElement("p");
-  areaP.textContent = `${area} sq ft`;
-
-  const areaSpan = document.createElement("span");
-  areaSpan.textContent = "Size: ";
-  areaSpan.classList.add("bold__words");
-
-  areaP.prepend(areaSpan);
-  figure.appendChild(areaP);
-
-  const imgUrl = document.createElement("img");
-  imgUrl.src = imageUrl;
-  imgUrl.alt = `Image of ${templeName} temple`;
-  imgUrl.setAttribute("loading", "lazy");
-  figure.appendChild(imgUrl);
-
-  return figure;
-}
-
-function renderCards() {
-  const mainEl = document.querySelector("main");
-
-  const pictureHtml = temples.map((temple) =>
-    createPicture(
-      temple.templeName,
-      temple.location,
-      temple.dedicated,
-      temple.area,
-      temple.imageUrl
-    )
-  );
-
-  pictureHtml.forEach((picture) => mainEl.appendChild(picture));
 }
 
 function showNavBarOnBiggerScreen(event) {
@@ -188,4 +155,4 @@ templesLarge.addEventListener("change", hideHambBtn);
 
 showNavBarOnBiggerScreen(templesLarge);
 hideHambBtn(templesLarge);
-renderCards();
+createTemplateCard();
