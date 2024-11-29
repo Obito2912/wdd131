@@ -12,7 +12,7 @@
     --nav-background-color: hsl(0, 0%, 0%, 0.8);
     --nav-link-color: #fff;
     --header-title: #000;
-    --cards-background-color: #0005;
+    --cards-background-color: rgba(255, 255, 255, 0.333);
     --nav-hover-link-color: #cbce32;
     --nav-hover-background-color: rgba(0, 0, 0, 0.374);
     --header-dark-background-color: rgba(255, 255, 255, 0.5);
