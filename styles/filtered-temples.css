@@ -15,7 +15,7 @@
     --cards-background-color: rgba(255, 255, 255, 0.333);
     --nav-hover-link-color: #cbce32;
     --nav-hover-background-color: rgba(0, 0, 0, 0.374);
-    --header-dark-background-color: rgba(255, 255, 255, 0.5);
+    --header-dark-background-color: rgba(170, 79, 79, .5);
 }
 
 * {
@@ -36,11 +36,13 @@ h3 {
 }
 
 body {
-    background-image: url(../images/gradient-small.jpg);
-    background-attachment: fixed;
+    background: radial-gradient(circle,
+            rgba(33, 106, 155, .5) 0%,
+            rgba(94, 166, 168, 0.5) 50%,
+            rgba(170, 79, 79, .5) 100%);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100% 90% 50% 100%;
     font-family: var(--paragraph-font);
 }
 
@@ -143,6 +145,7 @@ body {
     padding: 10px;
     border-radius: 10px;
     background-color: var(--cards-background-color);
+    box-shadow: 0 0 20px 5px var(--header-dark-background-color);
 }
 
 .label {
