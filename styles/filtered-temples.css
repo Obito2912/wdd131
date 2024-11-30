@@ -55,7 +55,6 @@ body {
             rgba(170, 79, 79, .5) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 90% 50% 100%;
     font-family: var(--paragraph-font);
 }
 
