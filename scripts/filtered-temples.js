@@ -92,12 +92,14 @@ const navEl = document.querySelector(".header__nav");
 
 const today = new Date();
 const templesLarge = window.matchMedia("(min-width: 425px)");
+const container = document.querySelector(".div__main");
 currentYear.textContent += `© ${today.getFullYear()}`;
 lastModified.textContent += document.lastModified;
 lastModified.style.color = "#fff";
 lastModified.style.fontWeight = "normal";
 
-function createTemplateCard() {
+function createTemplateCard(temples) {
+  container.innerHTML = "";
   temples.forEach((temple) => {
     let card = document.createElement("section");
     card.classList.add("section");
@@ -124,7 +126,7 @@ function createTemplateCard() {
     card.appendChild(area);
     card.appendChild(img);
 
-    document.querySelector(".div__main").appendChild(card);
+    container.appendChild(card);
   });
 }
 
@@ -149,10 +151,36 @@ function handleClickOnMenu() {
   navEl.classList.toggle("js-show-header-nav");
 }
 
+document.querySelector(".js-old-link").addEventListener("click", () => {
+  createTemplateCard(
+    temples.filter((temple) => {
+      const year = parseInt(temple.dedicated.split(",")[0], 10);
+      return year < 1900;
+    })
+  );
+});
+
+document.querySelector(".js-new-link").addEventListener("click", () => {
+  createTemplateCard(
+    temples.filter((temple) => {
+      const year = parseInt(temple.dedicated.split(",")[0], 10);
+      return year > 2000;
+    })
+  );
+});
+
+document.querySelector(".js-large-link").addEventListener("click", () => {
+  createTemplateCard(temples.filter((temple) => temple.area > 90000));
+});
+
+document.querySelector(".js-small-link").addEventListener("click", () => {
+  createTemplateCard(temples.filter((temple) => temple.area < 10000));
+});
+
 headerMenu.addEventListener("click", handleClickOnMenu);
 templesLarge.addEventListener("change", showNavBarOnBiggerScreen);
 templesLarge.addEventListener("change", hideHambBtn);
 
 showNavBarOnBiggerScreen(templesLarge);
 hideHambBtn(templesLarge);
-createTemplateCard();
+createTemplateCard(temples);
