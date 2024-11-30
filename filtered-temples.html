@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 | Temple Album</title>
 
-    <meta name="description" content="This website provides a variety of LDS temples from different countries">
+    <meta name="description" content="This website provides a variety of LDS temple pictures from different countries">
     <meta name="author" content="Ovinson Lugo">
 
-    <link rel="stylesheet" href="styles/filtered-temples.css">
-    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;1,700&family=Poppins&display=swap"
+        as="style" onload="this.rel='stylesheet'">
 
     <script defer src="scripts/filtered-temples.js"></script>
 </head>
@@ -24,7 +26,7 @@
         <nav class="header__nav">
             <ul class="header__list">
                 <li>
-                    <a class="header__links" href="filtered-temples.html">Home</a>
+                    <a class="header__links js-home-link" href="filtered-temples.html">Home</a>
                 </li>
                 <li>
                     <a class="header__links js-old-link" href="#">Old</a>

@@ -117,8 +117,8 @@ function createTemplateCard(temples) {
     img.setAttribute("src", temple.imageUrl);
     img.setAttribute("alt", `${temple.templeName} Temple`);
     img.setAttribute("loading", "lazy");
-    img.setAttribute("width", 600);
-    img.setAttribute("height", 600);
+    img.setAttribute("width", 400);
+    img.setAttribute("height", 300);
 
     card.appendChild(name);
     card.appendChild(location);

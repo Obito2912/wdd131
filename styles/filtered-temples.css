@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;1,700&family=Poppins&display=swap');
 
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https://fonts.gstatic.com/s/montserrat.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('https://fonts.gstatic.com/s/poppins/v15/poppins-regular.woff2') format('woff2');
+    font-display: swap;
+}
+
 :root {
     --background-color: rgba(0, 0, 0, 0.7);
     --secondary-color: ;
@@ -7,7 +19,7 @@
     --accent2-color: ;
 
     --heading-font: "Montserrat";
-    --paragraph-font: "Poppins";
+    --paragraph-font: "Poppins", Arial, sans-serif;
 
     --nav-background-color: hsl(0, 0%, 0%, 0.3);
     --nav-link-color: #fff;
@@ -38,8 +50,9 @@ h3 {
 body {
     background: radial-gradient(circle,
             rgba(151, 102, 102, 0.5) 10%,
-            rgba(94, 166, 168, 0.5) 30%,
-            rgba(170, 79, 79, .5) 120%);
+            rgba(168, 151, 94, 0.5) 30%,
+            rgba(255, 255, 255, 0.5) 80%,
+            rgba(170, 79, 79, .5) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 90% 50% 100%;
@@ -84,7 +97,8 @@ body {
 }
 
 .header__nav {
-    visibility: hidden;
+    transform: scale(0);
+    transition: transform 0.3s ease;
     position: absolute;
     top: 100%;
     right: 0;
@@ -94,7 +108,7 @@ body {
 }
 
 .js-show-header-nav {
-    visibility: visible;
+    transform: scale(1);
 }
 
 .header__menu.show::before {
@@ -159,6 +173,7 @@ body {
     margin-top: 20px;
     padding: 10px;
     font-size: 14px;
+    min-height: 65px;
 }
 
 .footer p:last-child {
