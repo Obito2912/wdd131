@@ -69,3 +69,10 @@
         grid-template-columns: repeat(3, auto);
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .section img {
+        max-width: 400px;
+        max-height: 300px;
+    }
+}

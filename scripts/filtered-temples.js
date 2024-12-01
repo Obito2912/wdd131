@@ -29,7 +29,7 @@ const temples = [
   },
   {
     templeName: "Washington D.C.",
-    location: "Kensington, Maryland, United States",
+    location: "Maryland, United States",
     dedicated: "1974, November, 19",
     area: 156558,
     imageUrl: "./images/washington-dc-temple.webp",
@@ -57,7 +57,7 @@ const temples = [
   },
   {
     templeName: "Santo Domingo Dominican Republic",
-    location: "Santo Domingo, Dominican Republic",
+    location: "Santo Domingo, Dom. Rep.",
     dedicated: "2000, September, 17",
     area: 67000,
     imageUrl: "./images/santo-domingo-dominican-republic.webp",

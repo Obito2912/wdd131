@@ -25,8 +25,8 @@
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+    /* max-width: 100%;
+    height: auto; */
 }
 
 h1,
@@ -36,13 +36,6 @@ h3 {
 }
 
 body {
-    /* background: radial-gradient(circle,
-            rgba(151, 102, 102, 0.5) 10%,
-            rgba(168, 151, 94, 0.5) 30%,
-            rgba(255, 255, 255, 0.5) 80%,
-            rgba(170, 79, 79, .5) 100%); 
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
     font-family: var(--paragraph-font);
 }
 
@@ -147,10 +140,15 @@ body {
     border-radius: 10px;
     background-color: transparent;
     box-shadow: 0 0 10px 1px var(--header-dark-background-color);
+    place-self: center;
 }
 
-.section {
-    place-self: center;
+.section img {
+    width: 100%;
+    max-width: 300px;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .label {
