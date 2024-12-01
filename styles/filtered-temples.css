@@ -149,6 +149,10 @@ body {
     box-shadow: 0 0 20px 5px var(--header-dark-background-color);
 }
 
+.section {
+    place-self: center;
+}
+
 .label {
     font-weight: bold;
 }
