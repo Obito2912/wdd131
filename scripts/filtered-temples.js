@@ -7,11 +7,11 @@ const temples = [
     imageUrl: "./images/aba-nigeria.webp",
   },
   {
-    templeName: "Manti Utah",
-    location: "Manti, Utah, United States",
-    dedicated: "1888, May, 21",
-    area: 74792,
-    imageUrl: "./images/manti-utah.webp",
+    templeName: "Edmonton Alberta",
+    location: "Edmonton, Alberta, Canada",
+    dedicated: "1999, December, 11-12",
+    area: 10700,
+    imageUrl: "./images/edmonton-alberta.webp",
   },
   {
     templeName: "Payson Utah",
