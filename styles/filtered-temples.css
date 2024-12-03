@@ -137,7 +137,7 @@ body {
 }
 
 .card__title {
-    text-shadow: 2px 2px 10px #000;
+    text-shadow: 2px 2px 5px #000;
 }
 
 .section {
@@ -179,6 +179,7 @@ body {
     min-height: 65px;
     align-content: center;
     font-size: clamp(12px, 2vw, 16px);
+    display: grid;
 }
 
 .footer p:last-child {
