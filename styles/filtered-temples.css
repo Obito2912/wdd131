@@ -176,7 +176,7 @@ body {
     color: var(--nav-link-color);
     margin-top: 20px;
     padding: 10px;
-    min-height: 70px;
+    min-height: 75px;
     align-content: center;
     font-size: clamp(12px, 2vw, 16px);
 }
