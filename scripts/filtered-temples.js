@@ -8,14 +8,14 @@ const temples = [
   },
   {
     templeName: "Edmonton Alberta",
-    location: "Edmonton, Alberta, Canada",
+    location: "Alberta, Canada",
     dedicated: "1999, Dec, 11-12",
     area: 10700,
     imageUrl: "./images/edmonton-alberta.webp",
   },
   {
     templeName: "Payson Utah",
-    location: "Payson, Utah, United States",
+    location: "Payson, Utah, U.S.",
     dedicated: "2015, June, 7",
     area: 96630,
     imageUrl: "./images/payson-utah.webp",
@@ -29,7 +29,7 @@ const temples = [
   },
   {
     templeName: "Washington D.C.",
-    location: "Maryland, United States",
+    location: "Maryland, U.S.",
     dedicated: "1974, Nov, 19",
     area: 156558,
     imageUrl: "./images/washington-dc-temple.webp",
@@ -43,7 +43,7 @@ const temples = [
   },
   {
     templeName: "Orlando Florida",
-    location: "Florida, United States",
+    location: "Florida, U.S.",
     dedicated: "1994, Oct, 9-11",
     area: 70000,
     imageUrl: "./images/orlando-florida.webp",
@@ -57,14 +57,14 @@ const temples = [
   },
   {
     templeName: "Santo Domingo Dominican Republic",
-    location: "Santo Domingo, Dom. Rep.",
+    location: "Santo Domingo, D.R.",
     dedicated: "2000, Sept, 17",
     area: 67000,
     imageUrl: "./images/santo-domingo-dominican-republic.webp",
   },
   {
     templeName: "Kyiv Ukraine",
-    location: "Sofiivska Borshchagivka, Ukraine",
+    location: "Kyiv, Ukraine",
     dedicated: "2010, Aug, 29",
     area: 22184,
     imageUrl: "./images/kyiv-ukraine.webp",

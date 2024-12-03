@@ -1,5 +1,9 @@
 @media screen and (min-width: 425px) {
 
+    body {
+        grid: 5rem auto 6rem / auto;
+    }
+
     .header {
         margin: 0;
     }
@@ -47,7 +51,7 @@
     }
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 650px) {
     .div__main {
         grid-template-columns: repeat(2, auto);
     }
@@ -71,6 +75,12 @@
 }
 
 @media screen and (min-width: 1200px) {
+
+    .section {
+        max-width: 400px;
+        max-height: 450px;
+    }
+
     .section img {
         max-width: 400px;
         max-height: 300px;
