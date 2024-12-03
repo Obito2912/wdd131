@@ -176,8 +176,9 @@ body {
     color: var(--nav-link-color);
     margin-top: 20px;
     padding: 10px;
-    font-size: 14px;
     min-height: 65px;
+    align-content: center;
+    font-size: clamp(12px, 2vw, 16px);
 }
 
 .footer p:last-child {
