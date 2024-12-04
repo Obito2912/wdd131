@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins&display=swap');
+
+/* Color Example: 
+Primary: Royal Blue (#4169E1)
+Accent: Gold (#FFD700)
+Neutral: Light Gray (#F5F5F5)
+ */
+
+html {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", serif;
+    min-height: 100%;
+    background-color: #fff;
+    display: grid;
+    grid: 4rem auto 3rem / auto;
+    ;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Alegreya SC", serif;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    gap: 10px;
+    width: 95%;
+    margin-inline: auto;
+}
+
+header {
+    background-color: #D4A5A5;
+    margin-bottom: 10px;
+}
+
+a {
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    color: #333333;
+}
+
+a:hover {
+    color: #008080;
+}
+
+section {
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid #D4A5A5;
+    min-height: 300px;
+}
+
+section h2 {
+    text-shadow: 5px 5px 2px #C0C0C0;
+}
+
+p {
+    color: #333333;
+}
+
+p span {
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    place-self: center;
+}
