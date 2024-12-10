@@ -16,12 +16,65 @@
 
 <body>
     <header>
+        <h1>Create a Review</h1>
     </header>
     <main>
-        <form action="review.html" method="get">
-            <select required name="" id="">
-                <option value="" disabled selected>Select a Product</option>
-            </select>
+        <form method="get" action="review.html">
+            <fieldset>
+                <legend>Product Name</legend>
+                <label>Select a product to review from your previous purchases
+                    <select required name="productName" id="products">
+                        <option value="" disabled selected>Select a Product</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <div>Rate your product</div>
+                <div class="stars">
+                    <label for="fivestar"><input type="radio" id="fivestar" name="stars" value="5" required></label>
+                    <label for="fourstar"><input type="radio" id="fourstar" name="stars" value="4" required></label>
+                    <label for="threestar"><input type="radio" id="threestar" name="stars" value="3" required></label>
+                    <label for="twostar"><input type="radio" id="twostar" name="stars" value="2" required></label>
+                    <label for="onestar"><input type="radio" id="onestar" name="stars" value="1" required></label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Date of Purchase</legend>
+                <label>Date of purchase / Product was delivered
+                    <input type="date" id="purchase-date" name="dop" required>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Useful Features</legend>
+                <div>Check all that apply:</div>
+                <label class="quality"><input type="checkbox" id="product-features" name="features"
+                        value="quality">Quality</label>
+                <label><input type="checkbox" id="category1" name="features" value="worth">Value for
+                    money</label>
+                <label><input type="checkbox" id="category2" name="features" value="durability">Durability</label>
+                <label><input type="checkbox" id="category3" name="features" value="looks">Looks</label>
+                <label><input type="checkbox" id="category4" name="features" value="battery">Battery Life</label>
+                <label><input type="checkbox" id="category5" name="features" value="connectivity">Connectivity</label>
+
+            </fieldset>
+            <fieldset>
+                <legend>Written Review (Optional)</legend>
+                <label>Review your product
+                    <textarea name="review" id="written-review"
+                        placeholder="What did you like or dislike about this product?"></textarea>
+                </label>
+
+            </fieldset>
+            <fieldset>
+                <legend>User Name</legend>
+                <label>Name (Optional)
+                    <input type="text" name="username" id="name" placeholder="Enter your name">
+                </label>
+            </fieldset>
+
+            <input id="submit-button" type="submit" value="Submit Your Review">
+
         </form>
     </main>
     <footer class="footer">
