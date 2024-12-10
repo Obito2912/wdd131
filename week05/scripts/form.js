@@ -39,9 +39,7 @@ lastModified.style.color = "#fff";
 lastModified.style.fontWeight = "normal";
 
 function renderOptions() {
-  products.forEach((product) => {
-    productsEl.innerHTML += `<option value='${product.id}'>${product.name}</option>`;
-  });
+  products.forEach((product) => productsEl.innerHTML += `<option value='${product.id}'>${product.name}</option>`);
 }
 
 function localStorageCounter(e) {
