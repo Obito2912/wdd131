@@ -30,7 +30,7 @@ const productsEl = document.querySelector("#products");
 const currentYear = document.querySelector("#currentyear");
 const lastModified = document.querySelector("#lastModified");
 const submitButton = document.querySelector("#submit-button");
-const body = document.querySelector("#counter-page-body"); //
+const body = document.querySelector("#counter-page-body");
 const today = new Date();
 
 currentYear.textContent += `© ${today.getFullYear()}`;
@@ -51,9 +51,15 @@ function localStorageCounter(e) {
   counter += 1;
   localStorage.setItem("counter", counter);
 
-  let p = document.createElement("p");
-  p.textContent = `You have completed ${counter} reviews.`;
-  body.append(p);
+  let existingMessage = document.querySelector("#counter-message");
+  if (existingMessage) {
+    existingMessage.textContent = `You have completed ${counter} reviews.`;
+  } else {
+    let p = document.createElement("p");
+    p.id = "counter-message";
+    p.textContent = `You have completed ${counter} reviews.`;
+    body.append(p);
+  }
 }
 
 submitButton.addEventListener("submit", localStorageCounter);
