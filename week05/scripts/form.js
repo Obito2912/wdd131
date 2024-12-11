@@ -26,33 +26,29 @@ const products = [
   },
 ];
 
+const pageId = document.body.id;
 const productsEl = document.querySelector("#products");
-const currentYear = document.querySelector("#currentyear");
-const lastModified = document.querySelector("#lastModified");
-const submitButton = document.querySelector("#submit-button");
-const body = document.querySelector("#counter-page-body");
 const today = new Date();
 
-currentYear.textContent = `© ${today.getFullYear()}`;
-lastModified.textContent = document.lastModified;
-lastModified.style.color = "#fff";
-lastModified.style.fontWeight = "normal";
+if (pageId === 'form-body') {
+  const currentYear = document.querySelector("#currentyear");
+  const lastModified = document.querySelector("#lastModified");
+  const submitButton = document.querySelector("#submit-button");
 
-function renderOptions() {
-  products.forEach((product) => productsEl.innerHTML += `<option value='${product.id}'>${product.name}</option>`);
+  currentYear.textContent = `© ${today.getFullYear()}`;
+  lastModified.textContent = document.lastModified;
+  lastModified.style.color = "#fff";
+  lastModified.style.fontWeight = "normal";
+  submitButton.addEventListener("submit", (e) => localStorageCounter(e, 'form-body'));
+
 }
 
-function localStorageCounter(e) {
-  e.preventDefault();
-  let counter = parseInt(localStorage.getItem("counter") || 0);
+if (pageId === 'counter-body') {
+  const body = document.querySelector("#counter-body");
 
-  counter += 1;
-  localStorage.setItem("counter", counter);
-
+  let counter = localStorage.getItem("counter") || 0;
   let existingMessage = document.querySelector("#counter-message");
-  if (existingMessage) {
-    existingMessage.textContent = `You have completed ${counter} reviews.`;
-  } else {
+  if (!existingMessage) {
     let p = document.createElement("p");
     p.id = "counter-message";
     p.textContent = `You have completed ${counter} reviews.`;
@@ -60,6 +56,33 @@ function localStorageCounter(e) {
   }
 }
 
-submitButton.addEventListener("submit", localStorageCounter);
-
+function renderOptions() {
+  products.forEach((product) => productsEl.innerHTML += `<option value='${product.id}'>${product.name}</option>`);
+}
 renderOptions();
+
+function localStorageCounter(e, context) {
+  e.preventDefault();
+  let counter = parseInt(localStorage.getItem("counter") || 0);
+  counter += 1;
+
+  localStorage.setItem("counter", counter);
+
+  let body;
+  if (context === 'form-body') {
+    body = document.querySelector("#form-body");
+  } else if (context === 'counter-body') {
+    body = document.querySelector("#counter-body");
+  }
+
+  let existingMessage = document.querySelector("#counter-message");
+  if (existingMessage) {
+    existingMessage.textContent = `You have completed ${counter} reviews.`;
+  } else if (body) {
+    let p = document.createElement("p");
+    p.id = "counter-message";
+    p.textContent = `You have completed ${counter} reviews.`;
+    body.append(p);
+  }
+}
+
