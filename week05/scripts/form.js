@@ -44,16 +44,7 @@ if (pageId === 'form-body') {
 }
 
 if (pageId === 'counter-body') {
-  const body = document.querySelector("#counter-body");
-
-  let counter = localStorage.getItem("counter") || 0;
-  let existingMessage = document.querySelector("#counter-message");
-  if (!existingMessage) {
-    let p = document.createElement("p");
-    p.id = "counter-message";
-    p.textContent = `You have completed ${counter} reviews.`;
-    body.append(p);
-  }
+  localStorageCounter(null, 'counter-body');
 }
 
 function renderOptions() {
@@ -62,7 +53,8 @@ function renderOptions() {
 renderOptions();
 
 function localStorageCounter(e, context) {
-  e.preventDefault();
+  if (e) e.preventDefault();
+
   let counter = parseInt(localStorage.getItem("counter") || 0);
   counter += 1;
 
