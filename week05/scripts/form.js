@@ -33,8 +33,8 @@ const submitButton = document.querySelector("#submit-button");
 const body = document.querySelector("#counter-page-body");
 const today = new Date();
 
-currentYear.textContent += `© ${today.getFullYear()}`;
-lastModified.textContent += document.lastModified;
+currentYear.textContent = `© ${today.getFullYear()}`;
+lastModified.textContent = document.lastModified;
 lastModified.style.color = "#fff";
 lastModified.style.fontWeight = "normal";
 
