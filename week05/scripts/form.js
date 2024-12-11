@@ -27,10 +27,10 @@ const products = [
 ];
 
 const pageId = document.body.id;
-const productsEl = document.querySelector("#products");
 const today = new Date();
 
-if (pageId === 'form-body') {
+if (pageId === "form-body") {
+  let productsEl = document.querySelector("#products");
   const currentYear = document.querySelector("#currentyear");
   const lastModified = document.querySelector("#lastModified");
   const submitButton = document.querySelector("#submit-button");
@@ -39,18 +39,22 @@ if (pageId === 'form-body') {
   lastModified.textContent = document.lastModified;
   lastModified.style.color = "#fff";
   lastModified.style.fontWeight = "normal";
-  submitButton.addEventListener("submit", (e) => localStorageCounter(e, 'form-body'));
+  submitButton.addEventListener("submit", (e) =>
+    localStorageCounter(e, "form-body")
+  );
 
+  function renderOptions() {
+    products.forEach(
+      (product) =>
+        (productsEl.innerHTML += `<option value='${product.id}'>${product.name}</option>`)
+    );
+  }
+  renderOptions();
 }
 
-if (pageId === 'counter-body') {
-  localStorageCounter(null, 'counter-body');
+if (pageId === "counter-body") {
+  localStorageCounter(null, "counter-body");
 }
-
-function renderOptions() {
-  products.forEach((product) => productsEl.innerHTML += `<option value='${product.id}'>${product.name}</option>`);
-}
-renderOptions();
 
 function localStorageCounter(e, context) {
   if (e) e.preventDefault();
@@ -61,9 +65,9 @@ function localStorageCounter(e, context) {
   localStorage.setItem("counter", counter);
 
   let body;
-  if (context === 'form-body') {
+  if (context === "form-body") {
     body = document.querySelector("#form-body");
-  } else if (context === 'counter-body') {
+  } else if (context === "counter-body") {
     body = document.querySelector("#counter-body");
   }
 
@@ -77,4 +81,3 @@ function localStorageCounter(e, context) {
     body.append(p);
   }
 }
-
