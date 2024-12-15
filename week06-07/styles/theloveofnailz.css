@@ -109,8 +109,8 @@ body {
     border: 1px solid #ff0000;
     text-align: center;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.808);
-    color: #fff;
+    background-color: rgba(219, 219, 219, 0.808);
+    color: #000;
 }
 
 .footer {
