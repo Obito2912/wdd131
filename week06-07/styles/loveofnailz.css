@@ -84,11 +84,11 @@ body {
 }
 
 .header__menu_container:has(.header__menu:active) {
-    background-color: #ce9b9b;
+    background-color: #b62727;
 }
 
 .header__menu:active {
-    background-color: #ce9b9b;
+    background-color: #b62727;
     /* Provide a visual "pressed" effect */
     transform: scale(0.98);
     /* Slightly shrink the button */
@@ -142,11 +142,11 @@ body {
 }
 
 .list:has(a:active) {
-    background-color: #ce9b9b;
+    background-color: #b62727;
 }
 
 .list a:active {
-    background-color: #ce9b9b;
+    background-color: #b62727;
     /* Provide a visual "pressed" effect */
     transform: scale(0.98);
     /* Slightly shrink the button */
