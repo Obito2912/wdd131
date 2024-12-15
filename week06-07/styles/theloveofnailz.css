@@ -99,18 +99,35 @@ body {
     text-decoration: none;
 }
 
-.main>div {
+.main>section {
     margin-inline: auto;
-    width: 95%;
+    width: 90%;
     margin-top: 20px;
 }
 
 .main__intro {
-    border: 1px solid #ff0000;
+    box-shadow: 0 0 5px red;
     text-align: center;
-    padding: 10px;
-    background-color: rgba(219, 219, 219, 0.808);
     color: #000;
+    border-radius: 2px;
+}
+
+.main__img_container img {
+    object-fit: cover;
+    width: 100%;
+    display: block;
+}
+
+.background__img {
+    background-image: url(../images/intro-background.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main__ps {
+    background-color: hsla(0, 0%, 80%, 0.658);
+    padding: 10px;
 }
 
 .footer {
