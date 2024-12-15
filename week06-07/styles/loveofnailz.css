@@ -83,6 +83,10 @@ body {
     }
 }
 
+.header__menu_container:has(.header__menu:active) {
+    background-color: #ce9b9b;
+}
+
 .header__menu:active {
     background-color: #ce9b9b;
     /* Provide a visual "pressed" effect */
@@ -128,12 +132,17 @@ body {
     font-weight: bold;
     text-decoration: none;
     display: block;
+    -webkit-tap-highlight-color: transparent;
 }
 
 @media (hover: hover) {
     .list a:hover {
         color: #D2B48C;
     }
+}
+
+.list:has(a:active) {
+    background-color: #ce9b9b;
 }
 
 .list a:active {
