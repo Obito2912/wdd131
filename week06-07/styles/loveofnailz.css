@@ -62,6 +62,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .header__menu::after {
@@ -76,8 +77,10 @@ body {
     content: '↑';
 }
 
-.header__menu:hover {
-    color: #D2B48C;
+@media (hover: hover) {
+    .header__menu:hover {
+        color: #D2B48C;
+    }
 }
 
 .header__nav {
@@ -120,8 +123,10 @@ body {
     display: block;
 }
 
-.list a:hover {
-    color: #D2B48C;
+@media (hover: hover) {
+    .list a:hover {
+        color: #D2B48C;
+    }
 }
 
 .main__card {
