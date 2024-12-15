@@ -83,6 +83,13 @@ body {
     }
 }
 
+.header__menu:active {
+    background-color: #ce9b9b;
+    /* Provide a visual "pressed" effect */
+    transform: scale(0.98);
+    /* Slightly shrink the button */
+}
+
 .header__nav {
     display: none;
     height: calc(100vh - 76px);
@@ -127,6 +134,13 @@ body {
     .list a:hover {
         color: #D2B48C;
     }
+}
+
+.list a:active {
+    background-color: #ce9b9b;
+    /* Provide a visual "pressed" effect */
+    transform: scale(0.98);
+    /* Slightly shrink the button */
 }
 
 .main__card {
