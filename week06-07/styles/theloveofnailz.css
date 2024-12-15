@@ -99,35 +99,23 @@ body {
     text-decoration: none;
 }
 
-.main>section {
+
+.main__card {
     margin-inline: auto;
     width: 90%;
     margin-top: 20px;
-}
-
-.main__intro {
     box-shadow: 0 0 5px red;
     text-align: center;
     color: #000;
     border-radius: 2px;
+    width: 95%;
 }
 
-.main__img_container img {
+.main__container img {
+    margin-top: 10px;
     object-fit: cover;
     width: 100%;
     display: block;
-}
-
-.background__img {
-    background-image: url(../images/intro-background.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.main__ps {
-    background-color: hsla(0, 0%, 80%, 0.658);
-    padding: 10px;
 }
 
 .footer {
