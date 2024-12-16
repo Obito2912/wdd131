@@ -47,7 +47,7 @@ body {
 
 .header__menu_container {
     width: 100%;
-    background-color: #000;
+    background-color: #fff;
     padding: 5px 0 0;
 }
 
@@ -55,9 +55,9 @@ body {
     /* box-shadow: 0 5px 5px -5px #fff; This will be applied with JS when menu opens */
     font-family: var(--links);
     font-size: 18px;
-    box-shadow: inset 0 -5px 5px -5px #fff;
+    box-shadow: inset 0 0 5px 1px #000;
     text-decoration: none;
-    color: #fff;
+    color: #000;
     font-weight: bold;
     display: flex;
     flex-direction: row;
@@ -67,14 +67,11 @@ body {
 
 .header__menu::after {
     margin-left: 5px;
-    content: '↓';
+    content: '≡';
     font-size: 15px;
-    margin-bottom: 5px;
+    margin-top: auto;
     display: block;
-}
-
-.header__menu_open::after {
-    content: '↑';
+    font-weight: normal;
 }
 
 .header__menu_container:has(.header__menu:active) {
