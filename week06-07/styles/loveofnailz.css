@@ -79,11 +79,11 @@ body {
 }
 
 .menu__container:has(a:active) {
-    background-color: #FFF8E7;
+    background-color: #E6E6FA;
 }
 
 .header__menu:active {
-    background-color: #FFF8E7;
+    background-color: #E6E6FA;
     transform: scale(0.95);
 }
 
@@ -130,11 +130,11 @@ body {
 }
 
 .list:has(a:active) {
-    background-color: #FFF8E7;
+    background-color: #E6E6FA;
 }
 
 .list a:active {
-    background-color: #FFF8E7;
+    background-color: #E6E6FA;
     transform: scale(0.95);
 }
 
