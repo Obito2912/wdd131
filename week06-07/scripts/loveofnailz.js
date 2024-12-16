@@ -95,16 +95,17 @@ const addOn = [
 const menuBtn = document.querySelector(".header__menu");
 const navBar = document.querySelector(".header__nav");
 const main = document.querySelector('.main');
+const mainCntr1 = document.querySelector('.main__pricelist');
+const mainCntr2 = document.querySelector('.add-ons');
 
-function renderPriceListTemplate() {
-  const priceListCntr = document.querySelector('.main__pricelist');
-  priceList.forEach(obj => {
-    priceListCntr.innerHTML +=
-      `<h3 class='main__pricelist_header'>${obj.header}</h3>
+function renderList(container, array) {
+  array.forEach(obj => {
+    container.innerHTML +=
+      `<p class='main__pricelist_p'>${obj.header}</p>
     <div class='div1'>
       <ul>
-        <li>Cost: </li>
-        <li>ETA: </li>
+        <li class='hightlight'>Cost: </li>
+        <li class='hightlight'>ETA: </li>
       </ul>
     </div>
     <div class='div2'>
@@ -116,7 +117,8 @@ function renderPriceListTemplate() {
   });
 }
 
-renderPriceListTemplate();
+renderList(mainCntr1, priceList);
+renderList(mainCntr2, addOn);
 
 menuBtn.addEventListener("click", () => {
   navBar.classList.toggle("open-popup");
