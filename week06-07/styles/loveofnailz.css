@@ -75,14 +75,15 @@ body {
 
 .menu__container li {
     padding: 5px 0;
-    box-shadow: inset 0 0 5px 1px #228b225f;
+    box-shadow: inset 0 0 5px 1px #ff9100;
 }
 
 .menu__container:has(a:active) {
-    background-color: #228b225f;
+    background-color: #ff9100;
 }
 
 .header__menu:active {
+    color: #fff;
     background-color: transparent;
     transform: scale(0.95);
 }
@@ -95,8 +96,9 @@ body {
     transform: translateX(-50%);
     top: calc(100% - 4px);
     width: 100%;
-    background-image: radial-gradient(circle, #fff 0%, #ededed 30%, #d7d7d7 50%, #cccccc 70%, #b9b9b9 80%, #353535 90%, #000 100%);
+    background-image: radial-gradient(circle, #fff 0%, #ededed 30%, #d7d7d7 50%, #cccccc 70%, #b9b9b9 80%, #353535 90%, #ff9100 100%);
     margin-top: 2px;
+    z-index: 1;
 }
 
 .open-popup {
@@ -116,8 +118,8 @@ body {
     text-align: center;
     width: 100%;
     padding: 5px 0;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
+    border-top: 1px solid #ff9100;
+    border-bottom: 1px solid #ff9100;
 }
 
 .list a {
@@ -130,20 +132,38 @@ body {
 }
 
 .list:has(a:active) {
-    background-color: #228b225f;
+    background-color: #ff9100;
 }
 
 .list a:active {
     background-color: transparent;
+    color: #fff;
     transform: scale(0.95);
 }
 
 .main {
     width: calc(100% - 10px);
-    display: grid;
-    justify-items: center;
+    /* display: grid;
+    justify-items: center; Add this ones when the display is bigger*/
     margin: 20px auto 0;
-    gap: 10px;
+    position: relative;
+}
+
+.main__button {
+    position: sticky;
+    top: 90%;
+    left: 95%;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 0 5px #ff9100;
+    display: block;
+}
+
+.main__button:active {
+    background-color: #ff9100;
+    color: #fff;
 }
 
 .main__intro {
@@ -153,7 +173,7 @@ body {
     border-radius: 2px;
     grid-column: 1 / 3;
     padding: 5px;
-    background-image: radial-gradient(circle, #ffffff 10%, #fff8ef 30%, #fff1df 50%, #ffedd5 70%, #ff9100 100%);
+    background-image: radial-gradient(circle, #ffffff 10%, #fff8ef 30%, #fff1df 50%, #ffedd5 70%, #fee0b9 90%, #ff9100 100%);
 }
 
 .main__intro img {
@@ -167,8 +187,12 @@ body {
     grid-template-columns: calc(50% - 2.5px);
     gap: 5px;
     border: 1px solid #ff9100;
-    width: 90%;
+    width: 100%;
     justify-self: start;
+    margin-inline: auto;
+    margin-top: 20px;
+    max-width: 300px;
+    border-radius: 3px;
 }
 
 .add-ons {
@@ -176,8 +200,12 @@ body {
     grid-template-columns: calc(50% - 2.5px);
     gap: 5px;
     border: 1px solid #ff9100;
-    width: 90%;
+    width: 100%;
     justify-self: end;
+    margin-inline: auto;
+    margin-top: 20px;
+    max-width: 300px;
+    border-radius: 3px;
 }
 
 .main__pricelist_p,
