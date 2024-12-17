@@ -91,7 +91,6 @@ body {
 
 .header__nav {
     display: none;
-    height: 100vh;
     background-image: radial-gradient(circle, #fff 0%, #ededed 30%, #e7e7e7 40%, #ff9100 50%, #e7e7e7 60%, #d7d7d7 70%, #b9b9b9 80%, #cccccc 90%, #fff 95%);
     position: fixed;
     top: 0;
@@ -99,6 +98,13 @@ body {
     bottom: 0;
     right: 0;
     z-index: 1;
+}
+
+.no-scroll {
+    /* This prevents the scroll of the main window when modal is opened */
+    touch-action: none;
+    overflow: hidden;
+    /* height: 100%; */
 }
 
 .modal__close {

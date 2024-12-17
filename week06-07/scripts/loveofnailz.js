@@ -98,6 +98,7 @@ const main = document.querySelector('.main');
 const mainCntr1 = document.querySelector('.main__pricelist');
 const mainCntr2 = document.querySelector('.add-ons');
 const closeBtn = document.querySelector('.modal__close');
+const body = document.querySelector('body');
 
 function renderList(container, array) {
   array.forEach(obj => {
@@ -123,8 +124,10 @@ renderList(mainCntr2, addOn);
 
 menuBtn.addEventListener("click", () => {
   navBar.classList.add("open-popup");
+  body.classList.add('no-scroll');
 });
 
 closeBtn.addEventListener('click', () => {
   navBar.classList.remove("open-popup");
+  body.classList.remove('no-scroll');
 });
