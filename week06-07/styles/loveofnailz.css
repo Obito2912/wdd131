@@ -214,7 +214,8 @@ body {
     color: #000;
     border-radius: 2px;
     grid-column: 1 / 3;
-    max-width: 300px;
+    max-width: 350px;
+    min-width: 300px;
     margin-inline: auto;
     padding: 5px;
     background-image: radial-gradient(circle, #ffffff 10%, #fff8ef 30%, #fff1df 50%, #ffedd5 70%, #fee0b9 90%, #ff9100 100%);
@@ -236,7 +237,9 @@ body {
     justify-self: start;
     margin-inline: auto;
     margin-top: 20px;
-    max-width: 300px;
+    max-width: 350px;
+    min-width: 300px;
+    min-height: 750px;
     border-radius: 3px;
 }
 
@@ -249,7 +252,9 @@ body {
     justify-self: end;
     margin-inline: auto;
     margin-top: 20px;
-    max-width: 300px;
+    max-width: 350px;
+    min-width: 300px;
+    min-height: 600px;
     border-radius: 3px;
 }
 
