@@ -186,9 +186,6 @@ body {
     position: sticky;
     top: calc(100% - 60px);
     left: calc(100% - 93px);
-    min-width: 40px;
-    min-height: 40px;
-    padding: 10px;
     background-color: #ffffff7b;
     border-radius: 3px;
     border: none;
@@ -199,10 +196,16 @@ body {
 
 .main__button a {
     text-shadow: 0 0 5px #ff9100;
+    font-size: 18px;
     color: #000;
     text-decoration: none;
-    font-size: 18px;
+    min-width: 48px;
+    min-height: 48px;
     display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main__button:active {
@@ -262,7 +265,7 @@ body {
     min-width: 300px;
     min-height: 600px;
     border-radius: 3px;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
 }
 
 .main__pricelist_p,
