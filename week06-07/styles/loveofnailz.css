@@ -173,7 +173,7 @@ body {
     margin: -10px auto 0;
     text-align: center;
     font-weight: 100;
-    color: #ff9100;
+    color: #995900;
 }
 
 .main__button {
@@ -196,6 +196,9 @@ body {
 
 .main__button:active {
     background-color: #ff9100;
+}
+
+.main__button a:active {
     color: #fff;
 }
 
@@ -257,7 +260,7 @@ body {
 .add-ons h3 {
     grid-column: 1 / 3;
     text-align: center;
-    color: #228b22;
+    color: #288021;
 }
 
 .div1 ul,
@@ -274,7 +277,7 @@ body {
 }
 
 .hightlight {
-    color: #228b22;
+    color: #226600;
 }
 
 .footer {
