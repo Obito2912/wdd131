@@ -14,7 +14,6 @@
 html,
 body {
     height: 100%;
-    overscroll-behavior: none;
 }
 
 body {
@@ -152,16 +151,16 @@ body {
 }
 
 .main h2 {
-    margin: -10px auto 0;
+    margin: 10px auto 0;
     text-align: center;
     font-weight: 100;
     color: #ff9100;
 }
 
 .main__button {
-    position: sticky;
-    top: 90%;
-    left: 95%;
+    position: fixed;
+    top: calc(100% - 88px);
+    left: calc(100% - 93px);
     padding: 10px;
     background-color: #fff;
     border-radius: 3px;
@@ -187,6 +186,8 @@ body {
     color: #000;
     border-radius: 2px;
     grid-column: 1 / 3;
+    max-width: 300px;
+    margin-inline: auto;
     padding: 5px;
     background-image: radial-gradient(circle, #ffffff 10%, #fff8ef 30%, #fff1df 50%, #ffedd5 70%, #fee0b9 90%, #ff9100 100%);
 }
@@ -194,6 +195,7 @@ body {
 .main__intro img {
     display: block;
     margin: 0 auto 10px;
+    width: 100%;
 
 }
 
