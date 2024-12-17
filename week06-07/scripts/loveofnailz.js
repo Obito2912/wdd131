@@ -97,6 +97,7 @@ const navBar = document.querySelector(".header__nav");
 const main = document.querySelector('.main');
 const mainCntr1 = document.querySelector('.main__pricelist');
 const mainCntr2 = document.querySelector('.add-ons');
+const closeBtn = document.querySelector('.modal__close');
 
 function renderList(container, array) {
   array.forEach(obj => {
@@ -121,6 +122,9 @@ renderList(mainCntr1, priceList);
 renderList(mainCntr2, addOn);
 
 menuBtn.addEventListener("click", () => {
-  navBar.classList.toggle("open-popup");
+  navBar.classList.add("open-popup");
 });
 
+closeBtn.addEventListener('click', () => {
+  navBar.classList.remove("open-popup");
+});
