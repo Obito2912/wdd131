@@ -20,7 +20,7 @@ body {
 body {
     display: grid;
     grid: 70px auto 50px / auto;
-    min-height: 100vh;
+    min-height: 100dvh;
     font-family: var(--regular-text);
 }
 
