@@ -97,7 +97,7 @@ body {
     transform: translateX(-50%);
     top: calc(100% - 4px);
     width: 100%;
-    background-image: radial-gradient(circle, #fff 0%, #ededed 30%, #353535 50%, #d7d7d7 70%, #b9b9b9 80%, #cccccc 90%, #fff 95%);
+    background-image: radial-gradient(circle, #fff 0%, #ededed 30%, #e7e7e7 40%, #ff9100 50%, #e7e7e7 60%, #d7d7d7 70%, #b9b9b9 80%, #cccccc 90%, #fff 95%);
     margin-top: 2px;
     z-index: 1;
 }
@@ -158,7 +158,7 @@ body {
 }
 
 .main__button {
-    position: fixed;
+    position: sticky;
     top: calc(100% - 88px);
     left: calc(100% - 93px);
     padding: 10px;
