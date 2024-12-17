@@ -185,13 +185,16 @@ body {
 .main__button {
     position: sticky;
     top: calc(100% - 60px);
-    left: calc(100% - 93px);
+    margin: 0 auto;
     background-color: #ffffff7b;
     border-radius: 3px;
     border: none;
     box-shadow: 0 0 5px #ff9100;
     -webkit-tap-highlight-color: transparent;
     width: 100%;
+    max-width: 350px;
+    min-width: 300px;
+    display: block;
 }
 
 .main__button a {
