@@ -186,6 +186,8 @@ body {
     position: sticky;
     top: calc(100% - 88px);
     left: calc(100% - 93px);
+    min-width: 48px;
+    min-height: 48px;
     padding: 10px;
     background-color: #fff;
     border-radius: 3px;
@@ -195,7 +197,6 @@ body {
 }
 
 .main__button a {
-    display: block;
     color: #000;
     text-decoration: none;
     font-size: 18px;
