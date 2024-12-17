@@ -184,19 +184,21 @@ body {
 
 .main__button {
     position: sticky;
-    top: calc(100% - 88px);
+    top: calc(100% - 60px);
     left: calc(100% - 93px);
-    min-width: 48px;
-    min-height: 48px;
+    min-width: 40px;
+    min-height: 40px;
     padding: 10px;
-    background-color: #fff;
+    background-color: #ffffff7b;
     border-radius: 3px;
     border: none;
     box-shadow: 0 0 5px #ff9100;
     -webkit-tap-highlight-color: transparent;
+    width: 100%;
 }
 
 .main__button a {
+    text-shadow: 0 0 5px #ff9100;
     color: #000;
     text-decoration: none;
     font-size: 18px;
@@ -259,6 +261,7 @@ body {
     min-width: 300px;
     min-height: 600px;
     border-radius: 3px;
+    margin-bottom: 50px;
 }
 
 .main__pricelist_p,
@@ -300,5 +303,5 @@ body {
     text-align: center;
     place-content: center;
     font-size: clamp(12px, 2vw, 18px);
-    margin-top: 20px;
+    margin-top: 10px;
 }
