@@ -335,6 +335,12 @@ body {
     min-width: 95px;
     text-decoration: none;
     color: #fff;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 0.2s ease;
+}
+
+.social__list a:active {
+    transform: scale(0.80);
 }
 
 .social__list a img {
