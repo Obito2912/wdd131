@@ -191,31 +191,20 @@ body {
     border: none;
     box-shadow: 0 0 5px #ff9100;
     -webkit-tap-highlight-color: transparent;
-    width: 100%;
     max-width: 350px;
     min-width: 300px;
-    display: block;
-}
-
-.main__button a {
     text-shadow: 0 0 5px #ff9100;
     font-size: 18px;
     color: #000;
     text-decoration: none;
-    min-width: 48px;
-    min-height: 48px;
     display: block;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    place-content: center;
+    text-align: center;
+    min-height: 48px;
 }
 
 .main__button:active {
     background-color: #ff9100;
-}
-
-.main__button:active a {
     color: #fff;
 }
 
