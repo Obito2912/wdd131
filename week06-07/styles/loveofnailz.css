@@ -18,7 +18,7 @@ body {
 
 body {
     display: grid;
-    grid: 70px auto 50px / auto;
+    grid: 70px auto 100px / auto;
     min-height: 100dvh;
     font-family: var(--regular-text);
 }
@@ -305,10 +305,39 @@ body {
 }
 
 .footer {
+    display: flex;
     background-color: #000;
     color: #fff;
-    text-align: center;
-    place-content: center;
     font-size: clamp(12px, 2vw, 18px);
     margin-top: 10px;
+    padding: 5px;
+}
+
+.social,
+.rights {
+    place-content: center;
+    width: 50%;
+    display: flex;
+    justify-items: center;
+    display: block;
+}
+
+.social__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+
+.social__list a {
+    display: flex;
+    align-items: center;
+    min-width: 95px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.social__list a img {
+    width: 30px;
+    margin-right: 5px;
 }
