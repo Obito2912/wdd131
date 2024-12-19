@@ -50,7 +50,7 @@
 }
 
 .faq__question:active {
-    transform: scale(0.95);
+    transform: scale(0.98);
     color: #fff;
     background-color: transparent;
 }
@@ -59,6 +59,7 @@
     background-color: #fff;
     display: none;
     box-shadow: inset -4px 0 5px -5px #000, inset 4px 0 5px -5px #000;
+    padding: 10px;
 }
 
 .faq__answer p {
