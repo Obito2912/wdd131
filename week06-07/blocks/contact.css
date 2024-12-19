@@ -1,5 +1,6 @@
 .contact__main {
     margin-inline: auto;
+    position: relative;
 }
 
 .contact__title-message {
@@ -17,8 +18,8 @@
 .form {
     margin-top: 30px;
     margin-inline: auto;
-    min-width: 300px;
-    max-width: 350px;
+    min-width: 280px;
+    max-width: 330px;
     border: 1px solid #000;
     border-radius: 5px;
     padding: 20px;
@@ -30,6 +31,7 @@
     display: block;
     width: 100%;
     min-height: 48px;
+    padding: 10px;
 }
 
 #submit-button {
@@ -45,4 +47,28 @@
 #submit-button:active {
     background-color: #ff9100;
     color: #fff;
+}
+
+.message {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.message p {
+    padding: 30px;
+    background-color: #fff;
+    min-width: 200px;
+    border-radius: 5px;
+    border: 1px solid blue;
+}
+
+.message__close {
+    display: none;
 }
