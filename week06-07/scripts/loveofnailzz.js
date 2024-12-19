@@ -95,32 +95,36 @@ const addOn = [
 const menuBtn = document.querySelector(".header__menu");
 const navBar = document.querySelector(".header__nav");
 const main = document.querySelector('.main');
-const mainCntr1 = document.querySelector('.main__pricelist');
-const mainCntr2 = document.querySelector('.add-ons');
 const closeBtn = document.querySelector('.modal__close');
 const body = document.querySelector('body');
 
-function renderList(container, array) {
-  array.forEach(obj => {
-    container.innerHTML +=
-      `<p class='main__pricelist_p'>${obj.header}</p>
-    <div class='div1'>
-      <ul>
-        <li class='hightlight'>Cost: </li>
-        <li class='hightlight'>ETA: </li>
-      </ul>
-    </div>
-    <div class='div2'>
-      <ul>
-        <li> ${obj.cost}</li>
-        <li> ${obj.eta}</li>
-      </ul>
-    </div>`
-  });
+if (document.body.getAttribute('data-page') === 'loveofnailzz') {
+  const mainCntr1 = document.querySelector('.main__pricelist');
+  const mainCntr2 = document.querySelector('.add-ons');
+
+  function renderList(container, array) {
+    array.forEach(obj => {
+      container.innerHTML +=
+        `<p class='main__pricelist_p'>${obj.header}</p>
+      <div class='div1'>
+        <ul>
+          <li class='hightlight'>Cost: </li>
+          <li class='hightlight'>ETA: </li>
+        </ul>
+      </div>
+      <div class='div2'>
+        <ul>
+          <li> ${obj.cost}</li>
+          <li> ${obj.eta}</li>
+        </ul>
+      </div>`
+    });
+  }
+
+  renderList(mainCntr1, priceList);
+  renderList(mainCntr2, addOn);
 }
 
-renderList(mainCntr1, priceList);
-renderList(mainCntr2, addOn);
 
 menuBtn.addEventListener("click", () => {
   navBar.classList.add("open-popup");
