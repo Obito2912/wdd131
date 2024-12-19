@@ -1,6 +1,6 @@
 .faq__main {
-    margin-inline: auto;
     height: 100%;
+    width: 100%;
 }
 
 .faq__main h1 {
@@ -11,11 +11,12 @@
 
 .faq__container {
     display: grid;
+    margin-inline: auto;
     align-content: center;
     height: calc(100% - 50px);
     border-radius: 5px;
-    border: 1px solid #b9b9b9;
-    width: 95%;
+    border: 1px solid #000;
+    width: 85%;
 }
 
 .faq__list {
@@ -24,11 +25,12 @@
 }
 
 .faq__list li {
-    border-top: 1px solid #b9b9b9;
+    box-shadow: inset 0 0 5px -1px #000;
+    border-top: 1px solid #000;
 }
 
 .faq__list li:last-child {
-    border-bottom: 1px solid #b9b9b9;
+    border-bottom: 1px solid #000;
 }
 
 .faq__list li:has(.faq__question:active) {
@@ -40,13 +42,13 @@
     width: 100%;
     cursor: pointer;
     border: none;
-    background-color: #fff;
+    background-color: transparent;
     transition: transform 0.9s ease;
     -webkit-tap-highlight-color: transparent;
 }
 
 .faq__question:active {
-    transform: scale(0.90);
+    transform: scale(0.95);
     color: #fff;
-    background-color: #ff9100;
+    background-color: transparent;
 }
