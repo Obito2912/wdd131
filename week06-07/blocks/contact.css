@@ -1,0 +1,48 @@
+.contact__main {
+    margin-inline: auto;
+}
+
+.contact__title-message {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact__title-message h1,
+.contact__title-message p {
+    text-align: center;
+}
+
+.form {
+    margin-top: 30px;
+    margin-inline: auto;
+    min-width: 300px;
+    max-width: 350px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.form textarea,
+.form input {
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+    min-height: 48px;
+}
+
+#submit-button {
+    margin-top: 25px;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    margin-inline: auto;
+    font-size: 20px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#submit-button:active {
+    background-color: #ff9100;
+    color: #fff;
+}
