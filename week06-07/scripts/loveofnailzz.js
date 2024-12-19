@@ -98,6 +98,13 @@ const main = document.querySelector('.main');
 const closeBtn = document.querySelector('.modal__close');
 const body = document.querySelector('body');
 
+if (document.body.getAttribute('data-page') === 'faq') {
+  const questions = document.querySelectorAll('.faq__question');
+  const answers = document.querySelectorAll('.faq__answer');
+
+  questions.forEach((question, answer) => question.addEventListener('click', () => answers[answer].classList.toggle('faq__answer_open')));
+}
+
 if (document.body.getAttribute('data-page') === 'loveofnailzz') {
   const mainCntr1 = document.querySelector('.main__pricelist');
   const mainCntr2 = document.querySelector('.add-ons');

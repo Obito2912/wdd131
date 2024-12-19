@@ -22,6 +22,7 @@
 .faq__list {
     text-align: center;
     list-style: none;
+    background-color: #fff;
 }
 
 .faq__list li {
@@ -40,10 +41,11 @@
 .faq__question {
     min-height: 30px;
     width: 100%;
+    font-size: 16px;
     cursor: pointer;
     border: none;
     background-color: transparent;
-    transition: transform 0.9s ease;
+    transition: transform 0.5s ease;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -51,4 +53,18 @@
     transform: scale(0.95);
     color: #fff;
     background-color: transparent;
+}
+
+.faq__answer {
+    background-color: #fff;
+    display: none;
+    box-shadow: inset -4px 0 5px -5px #000, inset 4px 0 5px -5px #000;
+}
+
+.faq__answer p {
+    font-size: 12px;
+}
+
+.faq__answer_open {
+    display: block;
 }
