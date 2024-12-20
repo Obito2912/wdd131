@@ -152,6 +152,10 @@
         font-size: 24px;
     }
 
+    .header__menu::after {
+        font-size: 20px;
+    }
+
     .header__menu:hover {
         background-color: var(--princeton-orange);
         color: var(--white);
