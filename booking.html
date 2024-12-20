@@ -41,7 +41,7 @@
         </nav>
     </header>
     <main class="booking__main">
-        <h1>Schudule your next best set of nails</h1>
+        <h1>Schedule your next best set of nails</h1>
         <form action="#" class="booking__form">
             <fieldset class="shape__fieldset">
                 <legend>Nails Shape</legend>
@@ -89,6 +89,22 @@
                 <label><input type="checkbox" id="addon3" name="addon" value="free-style">Free Style Art</label>
                 <label><input type="checkbox" id="addon3" name="addon" value="long-XL">Add Long-XL</label>
             </fieldset>
+
+            <fieldset class="date__fieldset">
+                <legend>Shedule</legend>
+                <label>Choose your appointment date
+                    <input placeholder="mm/dd/yyyy" type="date" id="schedule" name="appointment" required>
+                </label>
+            </fieldset>
+
+            <fieldset class="name__fieldset">
+                <legend>Name</legend>
+                <label>Enter your name
+                    <input type="text" name="name" id="name" placeholder="Name">
+                </label>
+            </fieldset>
+
+            <input id="submit-button" type="submit" value="Submit">
 
         </form>
     </main>

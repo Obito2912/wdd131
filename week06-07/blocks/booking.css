@@ -1,4 +1,4 @@
-fieldset legend {
+.booking__main fieldset legend {
     font-weight: bold;
 }
 
@@ -35,14 +35,25 @@ fieldset legend {
 .addon__fieldset input[type='checkbox'],
 .work__fieldset input[type='checkbox'] {
     margin-right: 5px;
-    height: 25px;
-    width: 25px;
+    width: 20px;
+    height: 20px;
 }
 
 .addon__fieldset label,
 .work__fieldset label {
     display: flex;
     align-self: center;
+    margin-bottom: 5px;
+}
+
+.addon__fieldset label:last-child,
+.work__fieldset label:last-child {
+    margin: 0;
+}
+
+.addon__fieldset div,
+.work__fieldset div {
+    margin-bottom: 10px;
 }
 
 .booking__form label {
@@ -51,6 +62,7 @@ fieldset legend {
 
 #shapes {
     min-height: 48px;
+    margin-top: 10px;
 }
 
 #shapes {
@@ -61,12 +73,20 @@ fieldset legend {
 
 #shapes option {
     text-align: center;
-    color: #000;
-    -webkit-tap-highlight-color: transparent;
 }
 
-#shapes option:checked {
-    background-color: #ff9100;
-    color: #fff;
-    -webkit-tap-highlight-color: transparent;
+.date__fieldset input,
+.name__fieldset input {
+    display: block;
+    min-height: 48px;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.booking__main #submit-button {
+    min-height: 48px;
+    width: 100%;
+    margin: 0;
 }
