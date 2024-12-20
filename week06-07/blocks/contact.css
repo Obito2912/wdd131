@@ -25,14 +25,14 @@
     width: 90%;
     min-width: 280px;
     max-width: 400px;
-    border: 1px solid #000;
+    border: 1px solid var(--black);
     border-radius: 5px;
     padding: 20px;
 }
 
 .form p {
     text-align: center;
-    color: #1a5e70;
+    color: var(--midnight-green);
 }
 
 .form textarea,
@@ -46,7 +46,7 @@
 
 .form textarea:focus,
 .form input:focus {
-    outline: 2px solid #ff9100;
+    outline: 2px solid var(--princeton-orange);
     border: none;
 }
 
@@ -61,6 +61,6 @@
 }
 
 #submit-button:active {
-    background-color: #ff9100;
-    color: #fff;
+    background-color: var(--princeton-orange);
+    color: var(--white);
 }

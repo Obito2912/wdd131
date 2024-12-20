@@ -17,7 +17,7 @@
     padding: 10px;
     margin-inline: auto;
     width: 80%;
-    border: 1px solid #ff9100;
+    border: 1px solid var(--princeton-orange);
     border-radius: 5px;
     display: grid;
     gap: 15px;

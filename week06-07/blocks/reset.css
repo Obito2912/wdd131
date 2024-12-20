@@ -1,14 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;1,700&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@400;500;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@300;400;500;600&display=swap');
 
 :root {
-    --regular-text: 'Poppins', sans-serif;
-    --links: 'Montserrat', sans-serif;
+    /* =================== FONTS =================== */
+    --regular-text: 'Poppins', serif;
+    --links: 'Nunito', serif;
+    --title-subtitle: 'Alegreya SC', serif;
+
+    /* =================== Colors =================== */
+    --white: #fff;
+    --black: #000;
+    --black8: #00000082;
+    --princeton-orange: #ff9100;
+    --midnight-green: #1a5e70;
+    --golden-brown: #995900;
+    --gray: #ffffff7b;
+    --office-green: #288021;
+    --office-green-dark: #226600;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+a {
+    font-family: var(--links);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--title-subtitle);
 }
 
 html,

@@ -6,7 +6,7 @@
     }
 
     .booking__main #submit-button:hover {
-        background-color: #ff9100;
-        color: #fff;
+        background-color: var(--princeton-orange);
+        color: var(--white);
     }
 }

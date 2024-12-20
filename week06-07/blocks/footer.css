@@ -1,7 +1,7 @@
 .footer {
     display: flex;
-    background-color: #000;
-    color: #fff;
+    background-color: var(--black);
+    color: var(--white);
     font-size: clamp(12px, 2vw, 18px);
     margin-top: 10px;
     padding: 5px;
@@ -28,7 +28,7 @@
     align-items: center;
     min-width: 95px;
     text-decoration: none;
-    color: #fff;
+    color: var(--white);
     -webkit-tap-highlight-color: transparent;
     transition: transform 0.2s ease;
 }
