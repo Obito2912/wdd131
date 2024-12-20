@@ -98,6 +98,38 @@ const main = document.querySelector('.main');
 const closeBtn = document.querySelector('.modal__close');
 const body = document.querySelector('body');
 
+if (document.body.getAttribute('data-page') === 'booking') {
+
+  const form = document.querySelector('.booking__form');
+  let nameInput = document.querySelector('#name');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (form.checkValidity()) {
+      const nameValue = nameInput.value;
+      localStorage.setItem('nameValue', nameValue);
+      // Redirect to the response page
+      window.location.href = 'form-response-page.html';
+    }
+  });
+}
+
+if (document.body.getAttribute('data-page') === 'form-response-page') {
+
+  function renderMessage() {
+    const nameValue = localStorage.getItem('nameValue');
+    const main = document.querySelector('.form-response__main');
+    const messageCtnr = document.createElement('div');
+    const p = document.createElement('p');
+    messageCtnr.setAttribute('class', 'message__container');
+    p.textContent = `Thank you ${nameValue}! Your appointment has been set. See you soon!`
+    messageCtnr.append(p);
+    main.append(messageCtnr);
+  }
+
+  renderMessage();
+}
+
 if (document.body.getAttribute('data-page') === 'contact') {
   const submitBtn = document.querySelector('#submit-button');
   submitBtn.addEventListener('click', (e) => {
