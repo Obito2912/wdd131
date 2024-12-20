@@ -25,6 +25,11 @@
     padding: 20px;
 }
 
+.form p {
+    text-align: center;
+    color: #1a5e70;
+}
+
 .form textarea,
 .form input {
     margin-bottom: 10px;

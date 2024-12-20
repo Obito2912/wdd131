@@ -98,6 +98,27 @@ const main = document.querySelector('.main');
 const closeBtn = document.querySelector('.modal__close');
 const body = document.querySelector('body');
 
+if (document.body.getAttribute('data-page') === 'contact') {
+  const submitBtn = document.querySelector('#submit-button');
+  submitBtn.addEventListener('click', (e) => {
+    const form = document.querySelector('.form');
+
+    if (form.checkValidity()) {
+      e.preventDefault();
+      form.reset();
+      if (!document.querySelector('.form p')) {
+        const p = document.createElement('p');
+        p.textContent = 'Your message has been sent to Cassidy. She will get back to you within 24 hours.'
+        form.append(p);
+        e.preventDefault();
+        form.reset();
+      }
+    } else {
+      e.preventDefault();
+    }
+  });
+}
+
 if (document.body.getAttribute('data-page') === 'faq') {
   const questions = document.querySelectorAll('.faq__question');
   const answers = document.querySelectorAll('.faq__answer');
