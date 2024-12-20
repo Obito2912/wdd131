@@ -40,8 +40,57 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="booking__main">
+        <h1>Schudule your next best set of nails</h1>
+        <form action="#" class="booking__form">
+            <fieldset class="shape__fieldset">
+                <legend>Nails Shape</legend>
 
+                <label>Select your shape
+                    <select required name="shapeName" id="shapes">
+                        <option value="" disabled>Select a Product</option>
+                        <option value="square">Square Nails</option>
+                        <option value="oval">Oval Nails</option>
+                        <option value="round">Round Nails</option>
+                        <option value="coffin">Coffin Nails</option>
+                        <option value="almond">Almond Nails</option>
+                        <option value="french">French Nails</option>
+                        <option value="natural">Natural Nails</option>
+                        <option value="stiletto">Stiletto Nails</option>
+                    </select>
+                </label>
+
+            </fieldset>
+
+            <fieldset class="work__fieldset">
+                <legend>Work</legend>
+                <div>What work do you want on your nails</div>
+                <label><input type="checkbox" id="work1" name="work" value="acrylic">Full Set Acrylic</label>
+                <label><input type="checkbox" id="work2" name="work" value="polygel">Full Set Polygel</label>
+                <label><input type="checkbox" id="work3" name="work" value="fill1">2-4 Week Fill</label>
+                <label><input type="checkbox" id="work4" name="work" value="fill2">5+ Week Fill</label>
+                <label><input type="checkbox" id="work5" name="work" value="acrylic-toes">Acrylic Toes</label>
+                <label><input type="checkbox" id="work6" name="work" value="fill3">2-4 Week Acrylic Toe
+                    Fill</label>
+                <label><input type="checkbox" id="work7" name="work" value="polish-toes">Gel Polish Toes Only</label>
+                <label><input type="checkbox" id="work5" name="work" value="polish-manicure">Gel Polish Manicure</label>
+                <label><input type="checkbox" id="work5" name="work" value="luxury">Luxury Pedicure</label>
+            </fieldset>
+
+            <fieldset class="addon__fieldset">
+                <legend>Add-Ons</legend>
+                <div>Choose as many as you would like</div>
+                <label><input type="checkbox" id="addon1" name="addon" value="repair">Nail Repair</label>
+                <label><input type="checkbox" id="addon2" name="addon" value="medium">Medium Art</label>
+                <label><input type="checkbox" id="addon3" name="addon" value="simple">Simple Art</label>
+                <label><input type="checkbox" id="addon4" name="addon" value="detailed">Detailed/Extra Detailed
+                    Art</label>
+                <label><input type="checkbox" id="addon3" name="addon" value="soak-off">Soak-Off/Gel Removal</label>
+                <label><input type="checkbox" id="addon3" name="addon" value="free-style">Free Style Art</label>
+                <label><input type="checkbox" id="addon3" name="addon" value="long-XL">Add Long-XL</label>
+            </fieldset>
+
+        </form>
     </main>
     <footer class="footer">
         <div class="rights">
