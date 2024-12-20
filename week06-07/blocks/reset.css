@@ -22,3 +22,10 @@ body {
     min-height: 100vh;
     font-family: var(--regular-text);
 }
+
+@media screen and (min-width: 800px) {
+
+    body {
+        grid: 130px auto 180px / auto;
+    }
+}

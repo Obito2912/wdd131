@@ -1,7 +1,11 @@
 @import url(../blocks/reset.css);
 @import url(../blocks/header.css);
 @import url(../blocks/loveofnailzz.css);
+@import url(../blocks/loveofnailzz-large.css);
 @import url(../blocks/faq.css);
+@import url(../blocks/faq-large.css);
 @import url(../blocks/booking.css);
+@import url(../blocks/booking-large.css);
 @import url(../blocks/contact.css);
+@import url(../blocks/contact-large.css);
 @import url(../blocks/footer.css);

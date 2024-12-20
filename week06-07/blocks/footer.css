@@ -41,3 +41,45 @@
     width: 30px;
     margin-right: 5px;
 }
+
+@media screen and (orientation: portrait) {
+
+    .rights {
+        justify-items: flex-end;
+        margin-right: 10px;
+    }
+
+    .social {
+        margin-left: 10px;
+        justify-items: flex-start;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+    .footer {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .social__list {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .rights img {
+        width: 150px;
+        height: auto;
+    }
+
+    .social,
+    .rights {
+        width: 100%;
+    }
+
+    .rights {
+        font-size: 16px;
+    }
+}

@@ -141,3 +141,44 @@
     color: #fff;
     transform: scale(0.95);
 }
+
+@media screen and (min-width: 800px) {
+
+    .header__logo {
+        width: 200px;
+    }
+
+    .header__menu {
+        font-size: 24px;
+    }
+
+    .header__menu:hover {
+        background-color: #ff9100;
+        color: #fff;
+    }
+
+    .modal__close:hover {
+        background-color: #00000082;
+    }
+
+    .list:hover {
+        background-color: #000;
+    }
+
+    .list a:hover {
+        color: #fff;
+    }
+
+    .list a {
+        width: 100%;
+        min-height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .list {
+        padding: 0;
+    }
+
+}

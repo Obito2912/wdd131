@@ -1,0 +1,11 @@
+@media screen and (min-width: 800px) {
+    #submit-button:hover {
+        background-color: #ff9100;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .form {
+        margin-bottom: 25px;
+    }
+}
