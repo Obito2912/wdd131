@@ -41,7 +41,7 @@ body {
 
 body {
     display: grid;
-    grid: 70px auto 100px / auto;
+    grid: 85px auto 100px / auto;
     min-height: 100vh;
     font-family: var(--regular-text);
 }
