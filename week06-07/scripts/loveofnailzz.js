@@ -108,7 +108,6 @@ if (document.body.getAttribute('data-page') === 'booking') {
     if (form.checkValidity()) {
       const nameValue = nameInput.value;
       localStorage.setItem('nameValue', nameValue);
-      // Redirect to the response page
       window.location.href = 'form-response-page.html';
     }
   });
