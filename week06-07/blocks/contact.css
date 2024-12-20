@@ -39,6 +39,12 @@
     padding: 10px;
 }
 
+.form textarea:focus,
+.form input:focus {
+    outline: 2px solid #ff9100;
+    border: none;
+}
+
 #submit-button {
     margin-top: 25px;
     border: none;
